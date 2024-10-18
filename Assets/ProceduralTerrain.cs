@@ -4,10 +4,10 @@ using UnityEngine;
 public class ProceduralTerrain : MonoBehaviour
 {
     [Range(2, 256)] [SerializeField] private int _resolution = 10; 
-    [SerializeField] private float _heightMultiplier = 2f; 
+    [SerializeField] private float _heightMultiplier = 2f;
+    [SerializeField] private float _randomness = 1f; 
+    [SerializeField] private bool _smooth = false; 
     
-    public float _randomness = 1f; 
-    public bool _smooth = false; 
     private Mesh _mesh; 
     private Vector3[] _vertices; 
     
